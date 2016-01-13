@@ -6,6 +6,13 @@
 @font-times-new-roman : "times new roman";
 @font-leviathan : leviathan;
 @base-color : #F47735;
+
+
+//responsive design
+@xs-max-width  : 768px;
+
+
+
 li{
   list-style: none;
 } 
@@ -84,6 +91,114 @@ a{
   }
 }
 
+//Hamburger menu & home for smaller device
+@media screen and (max-width: @xs-max-width) {
+    .wbs-menu{
+      .fa-reorder{
+          font-size: 28px;
+          color: #fff;
+          margin: 10px 20px;
+      }
+    }
+    .search-box{
+        .fa-search{
+              position: relative !important;
+              margin-right: 18px;
+              color: #F47735;
+              font-size: 26px;
+              margin-top: 5px !important;
+              margin-left: 5px !important;
+        }
+    }
+    .footer{
+        padding: 0px!important;
+        .footer-label{
+          text-align:left !important;
+          margin-top: 35px;
+          padding-left: 45px;
+        }
+        .footer-info{
+            padding-left: 45px !important;
+            .info{
+              line-height: normal;
+            }
+            li{
+              border:none !important;
+              text-align:left !important;
+              padding-left: 0;
+              margin: 15px 0px;
+              i{
+                  float: left;
+                  margin: 15px 25px;
+                  margin-top: 0;
+                  margin-left: 0;
+              }
+            }
+        }
+        .switch-desktop{
+            text-align: center;
+            padding: 20px 0;
+            font-size: 18px;
+            font-family: "times new roman";
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+        }
+        .footer-redirections{
+            ul,li{
+              float:none !important;
+            }
+            li{
+              text-align: center;
+              padding: 10px;
+              a{
+                  color: #C6C6C6;
+                  font-size: 18px;
+                  font-weight: bold;
+              }
+            }
+            .oath{
+              float: none !important;
+              text-align: center;
+              color: #C6C6C6;
+              font-size: 18px;
+              font-weight: bold;
+            }
+            .warning{
+                color: #C6C6C6;
+                font-size: 22px;
+                font-weight: bold;
+                padding: 0 15px;
+                margin-top: 9px;
+                text-align: center;
+            }
+        }
+    }
+
+    .home-wrapper {
+        .sunday-summer-offer{
+            width: auto !important;
+            margin-left: 25px !important;
+            .offer-logo{
+                margin-top:25px!important;
+            }
+        }
+        .delivery-bar{
+            li {
+              border-right:1px solid #FFFFFF;
+              &:last-child{
+                border:none;
+              }
+            }
+            i{
+              display:block;
+            }
+        }
+    }
+}
+
+
+
 //Search box
 .search-container{
     padding: 5px 5px 8px 15px;
@@ -131,12 +246,12 @@ a{
 //Index footer
 .footer{
     background-color: #424242;
-    height: 230px;
     padding: 21px 18%;
     .footer-label{
         font-size: 18px;
         font-weight: 900;
         color: #FFFFFF;
+        text-align : center;
     }
     .footer-info {
         color: #FFFFFF;
@@ -145,6 +260,7 @@ a{
         padding-left: 0;
         li{
           float: left;
+          text-align : center;
           border-left: 1px solid #FFFFFF;
           i{
              font-size: 30px;
@@ -173,6 +289,9 @@ a{
         i{
           font-size: 22px;
           margin-right: 10px;
+        }
+        li{
+          float:left;
         }
         a{
             color: #949494;
@@ -230,11 +349,13 @@ a{
        background-color: @base-color;
        padding: 17px;
        text-align: center;
+       li{
+         float:left;
+       }
        a{
           color: #ffffff;
           font-family: serif;
           font-size: 14px;
-          padding: 0 50px;
           i{
             font-size: 22px;
             padding: 0 7px;
