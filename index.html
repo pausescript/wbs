@@ -13,43 +13,245 @@
 		<header>
 			<!-- Menu start here -->
 			<nav class="wbs-menu container-fluid padding-0" role="navigation">
-				<i class="fa fa-reorder visible-xs-block pull-left"></i>
-				<ul class="left-nav padding-0 <p></p>pull-left hidden-xs">
-					<li>
+				<!--Mobile menu start here -->
+				<div class="visible-xs-block menu-holder">
+					<i class="fa fa-reorder visible-xs-block pull-left cursor-pointer"></i>
+					<div class="xs-menu">
+						<div class="title text-center">You are not logged in</div>
+						<div class="action text-center">SING IN/ REGISTER</div>
+						<ul class="row menu-list">
+							<li class="nav-item col-xs-3 col-sm-3 active">
+								<i class="fa fa-beer"></i>
+					   			<div class="menu-label text-center">BEER</div>
+							</li>
+							<li class="nav-item col-xs-3 col-sm-3">
+								<i class="fa fa-glass"></i>
+					   			<div class="menu-label text-center">WINE</div>
+							</li>
+							<li class="nav-item col-xs-3 col-sm-3">
+								<i class="fa fa-flask"></i>
+					   			<div class="menu-label text-center">SPIRITS</div>
+							</li>
+							<li class="nav-item col-xs-3 col-sm-3">
+								<div class="more">
+									<i class="fa fa-circle-o"></i>
+									<i class="fa fa-circle-o"></i>
+									<i class="fa fa-circle-o"></i>
+								</div>
+					   			<div class="menu-label text-center">MORE</div>
+							</li>
+						</ul>
+						<div class="sub-menu">
+							<div class="category">
+				   				<div class="xs-beer-title">BEER</div>
+				   				<ul class="xs-beer-list">
+				   					<li>
+				   						<a href="">Beer & Cider Specials (200)</a>
+				   					</li>
+				   					<li>
+				   						<a href="">Under $30</a>
+				   					</li>
+				   					<li>
+				   						<a href="">Popular Beers & Ciders</a>
+				   					</li>
+				   					<li>
+				   						<a href="">Newest Beers & Ciders</a>
+				   					</li>
+				   					<li>
+				   						<a href="">Newest Beers & Ciders</a>
+				   					</li>
+				   					<li>
+				   						<a href="">All Beer & Ciders</a>
+				   					</li>
+				   				</ul>
+			   				</div>
+			   				<div class="sub-category">
+			   					<div class="xs-beer-title">BEER & CIDER</div>
+				   				<ul class="xs-beer-list">
+				   					<li>
+				   						<a href="">Craft Beer (180)</a>
+				   					</li>
+				   					<li>
+				   						<a href="">International Beer (230)</a>
+				   					</li>
+				   					<li>
+				   						<a href="">Australian Premium Beer (335)</a>
+				   					</li>
+				   					<li>
+				   						<a href="">Cider</a>
+				   					</li>
+				   					<li>
+				   						<a href="">Full Strength Beer</a>
+				   					</li>
+				   					<li>
+				   						<a href="">Mid Strength Beer</a>
+				   					</li>
+				   					<li>
+				   						<a href="">Light Beer</a>
+				   					</li>
+				   					<li>
+				   						<a href="">Low Card Beer</a>
+				   					</li>
+				   				</ul>
+				   				<a  href="" class="more">All Beer & Ciders</a>
+			   				</div>
+			   				<div class="top-banner">
+			   					 <div class="count">200</div>
+			   					 <div class="title">SPECIALS</div>
+			   					 <div class="sub-title">ALWAYS SAVE ON SOMETHING YOU'LL LOVE</div>
+			   				</div>
+			   				<div class="bottom-banner">
+			   					YOUR CHANCE TO WIN
+			   				</div>
+			   				<div class="logout">
+			   					LOG OUT
+			   				</div>
+			   				<div class="bg-overlay"></div>
+			   			</div>
+					</div>
+				</div>
+				<!--Mobile menu end here -->
+
+				<!--Web menu start here -->
+				<ul class="left-nav padding-0 pull-left hidden-xs">
+					<li class="nav-item">
 						<a href="#">BEER</a>
+						<div class="sub-menu container-fluid">
+					   		<div class="row content">
+					   			<div class="col-xs-2 col-sm-3 col-md-3 col-lg-offset-2 col-lg-2 category">
+					   				<div class="bear"></div>
+					   				<div class="title text-center">BEER</div>
+					   				<ul>
+					   					<li>
+					   						<a href="">Beer & Cider Specials (200)</a>
+					   					</li>
+					   					<li>
+					   						<a href="">Under $30</a>
+					   					</li>
+					   					<li>
+					   						<a href="">Popular Beers & Ciders</a>
+					   					</li>
+					   					<li>
+					   						<a href="">Newest Beers & Ciders</a>
+					   					</li>
+					   				</ul>
+					   			</div>
+					   			<div class="col-xs-2 col-sm-3 col-md-3 col-lg-2 sub-category">
+					   				<div class="title">BEER & CIDER</div>
+					   				<ul>
+					   					<li>
+					   						<a href="">Craft Beer (180)</a>
+					   					</li>
+					   					<li>
+					   						<a href="">International Beer (230)</a>
+					   					</li>
+					   					<li>
+					   						<a href="">Australian Premium Beer (335)</a>
+					   					</li>
+					   					<li>
+					   						<a href="">Cider</a>
+					   					</li>
+					   					<li>
+					   						<a href="">Full Strength Beer</a>
+					   					</li>
+					   					<li>
+					   						<a href="">Mid Strength Beer</a>
+					   					</li>
+					   					<li>
+					   						<a href="">Light Beer</a>
+					   					</li>
+					   					<li>
+					   						<a href="">Low Card Beer</a>
+					   					</li>
+					   				</ul>
+					   				<a  href="" class="more">All Beer & Ciders</a>
+					   			</div>
+					   			<div class="col-xs-2 col-sm-3 col-md-3 col-lg-2 sub-category">
+					   				<div class="title">BRANDS</div>
+					   				<ul>
+					   					<li>
+					   						<a href="">Asahi</a>
+					   					</li>
+					   					<li>
+					   						<a href="">James Boag'S</a>
+					   					</li>
+					   					<li>
+					   						<a href="">Pure Blonde</a>
+					   					</li>
+					   					<li>
+					   						<a href="">Stella Artois</a>
+					   					</li>
+					   					<li>
+					   						<a href="">5 Seeds</a>
+					   					</li>
+					   					<li>
+					   						<a href="">Rekorderlig</a>
+					   					</li>
+					   					<li>
+					   						<a href="">Somersby</a>
+					   					</li>
+					   					<li>
+					   						<a href="">Strongbow</a>
+					   					</li>
+					   				</ul>
+					   				<a  href="" class="more">All Beer & Ciders brands</a>
+					   			</div>
+					   			<div class="col-xs-2 col-sm-3 col-md-3 col-lg-2 offer-banner">
+					   				<div class="top-banner">
+					   					 <div class="count">200</div>
+					   					 <div class="title">SPECIALS</div>
+					   					 <div class="sub-title">ALWAYS SAVE ON SOMETHING YOU'LL LOVE</div>
+					   				</div>
+					   				<div class="bottom-banner">
+					   					YOUR CHANCE TO WIN
+					   				</div>
+					   			</div>
+					   		</div>
+					   		<div class="bg-overlay"></div>
+					   	</div>
 					</li>
-					<li>
+					<li class="nav-item">
 						<a href="#">WINE</a>
 					</li>
-				 	<li>
+				 	<li class="nav-item">
 				   		<a href="#">SPIRITS</a>
-				 	</li>
-				  	<li>
+				 	</li class="nav-item">
+				  	<li class="nav-item">
 				   		<a href="#">MORE...</a>
 				 	</li>
 			  	</ul>
+			  	<!--Web menu end here -->
+
 			  	<div class="bws-logo">
 			    	<img src="images/bws-logo.png"/>
 			  	</div>
+
+			  	<!--Right header start here-->
 			  	<ul class="pull-right right-nav">
 			   		<li class="hidden-xs">
 				 		<a href="" class="action-link">
-				   		<span class="welcome-class">Welcome </span>
 				   		<span class="login-register-class">Login </span>
 				   		<span class="welcome-class">or </span>
 				   		<span class="login-register-class">Register </span>
 				   		<i class="fa fa-user"></i></a>
 			    	</li>
 			    	<li>
-				 		<a href=""><i class="fa fa-heart-o"></i></a>
+				 		<a href="">
+				 			<i class="fa fa-heart-o"></i>
+				 			<div class="count-label">3</div>
+				 		</a>
 			    	</li>
 			    	<li>
-				 		<a href=""><i class="fa fa-shopping-cart"></i></a>
+				 		<a href="">
+				 			<i class="fa fa-shopping-cart"></i>
+				 			<div class="count-label">99</div>
+				 		</a>
 			    	</li>
 			  	</ul>
+			  	<!--Right header end here-->
 		   	</nav>
 		   	<!-- Menu end here -->
-
+		   
 		   	<!-- Search bar start here -->
 		   	<div class="search-container clearfix">
 				<div class="pull-left">
@@ -143,12 +345,14 @@
 			  	<div class="pull-left oath">
 			    	<i class="fa fa-trophy hidden-xs"></i>We take Responsible Service of Alcohol seriously.
 			  	</div>
-			  	<div class="warning">LIQUOR ACT 2007.It is an offence to sell or supply to or to obtain liquor on behalf of a person under the age of 18</div>
+			  	<div class="warning visible-xs-block">LIQUOR ACT 2007.It is an offence to sell or supply to or to obtain liquor on behalf of a person under the age of 18</div>
    			</div>
     	</div>
 
     <!--Javascript libraries-->
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
     <script type="text/javascript" src="scripts/less.min.js"></script>
+    <!--<script type="text/javascript" src="scripts/main.js"></script>-->
 </body>
 </html>

@@ -1,8 +1,42 @@
 @font-face {
-    font-family: leviathan;
+    font-family: Leviathan;
     src: url("fonts/ufonts.com_leviathan-htf-black-opentype.otf");
 }
 @font-face {
-    font-family: archer-bold;
+    font-family: Archer-bold;
     src: url("fonts/ufonts.com_archer-bold.ttf");
+}
+@font-face {
+    font-family: Archer-light;
+    src: url("fonts/Archer-Light-Pro.otf");
+}
+
+
+//Global variable 
+@font-archer-light : Archer-light;
+@font-times-new-roman : "times new roman";
+@font-leviathan : Leviathan;
+@base-color : #F47735;
+
+
+//responsive design
+@xs-max-width  : 768px;
+
+ul{
+    padding-left:0px;
+}
+li{
+  list-style: none;
+} 
+.padding-0{
+  padding: 0;
+} 
+a{   
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+.cursor-pointer{
+    cursor: pointer;
 }
